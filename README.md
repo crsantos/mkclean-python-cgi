@@ -2,6 +2,8 @@
 
 #### Python CGI frontend to run [**mkclean tool**](http://www.matroska.org/downloads/mkclean.html) on the MKV's found on the dir
 
+![](images/shot1.png)
+
 Just insert the DIR to scan and a bootstrap _html_ will show you a list of candidates, with a **Fix** button
 
 	* Using [_Python Cheetah_](http://www.cheetahtemplate.org/) templates
