@@ -1,0 +1,60 @@
+<html lang="en">
+  <head>
+    <title>MKVOptimizer</title>
+    <link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+    <style type="text/css" media="screen">
+      * {
+        font-size: 1.0em;
+      }
+      .width250 {
+        max-width: 250px; 
+        word-wrap:break-word;
+      }
+      .width100 {
+        max-width: 100px; 
+        word-wrap:break-word;
+      }
+      .width50 {
+        max-width: 50px; 
+        word-wrap:break-word;
+      }
+      .bold{
+        font-weight: bold;
+      }
+      .center{
+        vertical-align : middle;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="header">
+        <br>
+      </div>
+      <div class="">
+        <h1>MKV Fixed!</h1>
+      </div>
+
+      <div class="row">
+        #if $arguments
+        <p class="lead">Fixed:</p>
+        <ul>
+          #for $key in $arguments.keys():
+          <li>$arguments[$key].value</li>
+          #end for
+        </ul>
+        
+        <pre>$log</pre>
+
+        #else
+        <h3 class="text-danger">None found!</h3>
+        #end if
+        <hr>
+
+      </div>
+
+    </div> <!-- /container -->
+    
+  </body>
+</html>
